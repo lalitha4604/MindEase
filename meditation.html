@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healthy Eating Challenges & Asanas | MindEase</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #d7f5f5, #fef6e4);
+      color: #333;
+    }
+    header {
+      background: #00bfa6;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      border-bottom-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+      animation: fadeIn 1s ease-in;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .challenge-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 1.5rem;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .card::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(0,191,166,0.1) 0%, transparent 60%);
+      animation: pulseGlow 6s infinite;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+    }
+    .card h2 {
+      color: #00bfa6;
+      margin-top: 0;
+    }
+    .card ul, .card table {
+      padding-left: 1rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      text-align: left;
+    }
+    th {
+      background: #f1f1f1;
+    }
+    .footer-note {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .asana-gallery {
+      padding: 2rem;
+      background: #fff8f0;
+    }
+    .asana-gallery h2 {
+      text-align: center;
+      color: #00bfa6;
+      margin-bottom: 1rem;
+    }
+    .asana-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      padding-top: 1rem;
+    }
+    .asana-card {
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      padding: 1rem;
+      text-align: center;
+    }
+    .asana-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 1rem;
+      margin-bottom: 0.75rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulseGlow {
+      0%, 100% { transform: scale(1); opacity: 0.6; }
+      50% { transform: scale(1.1); opacity: 0.3; }
+    }
+    
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">🌸 MindEase</div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="meditation.html">Meditation</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="signin.html">Sign in</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    
+
+  <section class="challenge-container">
+    <!-- [Existing cards remain unchanged] -->
+    <!-- (Same content from previous version) -->
+  </section>
+
+  <section class="asana-gallery">
+    <h2>Yoga Asanas for Wellbeing 🧘‍♀</h2>
+    <div class="asana-grid">
+      <div class="asana-card">
+        <img src="d.jpg" alt="Tadasana - Mountain Pose">
+        <h3>Tadasana</h3>
+        <p>Improves posture, balance and focus.</p>
+      </div>
+      <div class="asana-card">
+        <img src="p.jpg" alt="Vrikshasana - Tree Pose">
+        <h3>Vrikshasana</h3>
+        <p>Enhances balance and mental clarity.</p>
+      </div>
+      <div class="asana-card">
+        <img src="l.jpg" alt="tandasana">
+        <h3>Bhujangasana</h3>
+        <p>Relieves stress and strengthens the spine.</p>
+      </div>
+      <div class="asana-card">
+        <img src="y.jpg" alt="Balasana - Child's Pose">
+        <h3>Balasana</h3>
+        <p>Calms the mind and releases tension.</p>
+      </div>
+      <div class="asana-card">
+        <img src="r.jpg" alt="Shavasana - Corpse Pose">
+        <h3>Shavasana</h3>
+        <p>Deep relaxation and stress relief.</p>
+      </div>
+  
+      </div>
+
+    </div>
+  </section>
+
+  <p class="footer-note">Stay consistent. Small habits, big impact. 💚</p>
+</body>
+</html>
